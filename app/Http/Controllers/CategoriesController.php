@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\TypesArticles;
+use App\Categories;
 use Illuminate\Http\Request;
 
-class TypesArticlesController extends Controller
+class CategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.

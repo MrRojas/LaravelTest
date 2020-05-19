@@ -19,8 +19,8 @@ class CreateArticlesTable extends Migration
             $table->string('name' , 255)->default(' ');
             $table->string('img' , 255)->default('https://cdn4.iconfinder.com/data/icons/signicon-pt-1-1/100/064_-_user-512.png');
 
-            $table->unsignedBigInteger('id_types_articles');
-            $table->foreign('id_types_articles')->references('id')->on('types_articles');
+            $table->unsignedBigInteger('id_categories');
+            $table->foreign('id_categories')->references('id')->on('categories');
             $table->string('status' , 1)->default('1');
 
             $table->softDeletes();
